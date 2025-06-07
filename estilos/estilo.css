@@ -1,0 +1,354 @@
+/* Remove margens e espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #12123d, #404058);
+    min-height: 100vh;
+
+}
+
+h1,h2,h3,h4 {
+    color: #F0F0F0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+/*                                      HOMEPAGE                                   */
+
+#body-index {
+    background: #fff url(../assets/imagem001.jpg) no-repeat center center/cover;
+}
+
+.home-background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.home {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: left;
+    gap: 1rem; /* espaço entre os textos */
+    padding: 0 2rem; /* para não grudar nas bordas */
+    background-color: #1a233889;
+    border-radius: 0px 1rem 1rem 0px;
+}
+
+.home-background img {
+    width: 100%;
+    height: 100%;
+}
+
+.home a {
+    color: #fff;
+    background-color: #1a2338;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 150px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.home a:hover {
+    transform: scale(1.05);
+}
+
+.home h1 {
+    text-align: left;
+    background-color: #1a2338;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.home h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+/*                              CABEÇALHO                                  */
+
+
+
+
+.botao {
+    font-size: 22px;
+    color: #F0F0F0;
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Orbitron', sans-serif;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.botao:hover {
+    background-color: #070c38;
+    /* Tom mais escuro ao passar o mouse */
+    transform: scale(1.05);
+}
+
+header {
+    background-color: #1F2A44;
+    padding: 20px 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+
+/*                             RODAPE                          */
+footer {
+    background-color: #1a2338;
+    color: #B0B0B0;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+
+
+
+
+/*                                    CONTATO                                */
+
+
+
+.contato {
+    flex: 1;
+    padding: 20px;
+}
+
+.contato h1{
+    margin: 2rem;
+    
+}
+
+.contato h3{
+    margin: 1rem;
+    
+}
+.contato h2{
+    margin: 0.4rem;
+}
+
+.contato form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Para não quebrar em telas pequenas */
+}
+
+
+.contato  form input{
+    padding: 10px;
+    width: 50%;
+    height: 55px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(93, 91, 197, 0.3);
+  
+
+}
+
+.contato  form button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    width: 5rem;
+    box-shadow: 0 4px 8px rgba(135, 102, 255, 0.3);
+}
+.contato form button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.social{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;   /* centraliza horizontalmente */
+    gap: 3rem;                 /* espaço entre cada ícone/link */
+    flex-wrap: wrap;           /* quebra se a tela for muito estreita */
+}
+
+.social a{
+    display: flex;
+    align-items: center;       /* ícone e texto na mesma linha */
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;               
+    transition: transform .2s;
+}
+
+.social i{
+    font-size: 1.8rem;
+    margin-right: .5rem;
+}
+
+.social a:hover{
+    transform: scale(1.08);    /* leve zoom no hover */
+}
+
+   
+   
+
+
+
+
+
+/*                                   GERAR IMAGEM                             */
+
+
+
+
+.gerar-imagem {
+    font-size: 15px;
+    flex: 1;
+    padding: 20px;
+    /* desgruda o conteúdo da borda, assim fica mais bonito*/
+
+}
+
+.galeria {
+    color: #F0F0F0;
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.gerar-imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gerar-imagem form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 6rem;
+}
+
+.gerar-imagem form button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    width: 5rem;
+    box-shadow: 0 4px 8px rgba(135, 102, 255, 0.3);
+}
+
+.gerar-imagem form button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.gerar-imagem form input {
+    padding: 10px;
+    width: 50%;
+    height: 55px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(93, 91, 197, 0.3);
+}
+
+.gerar-titulo {
+    margin-top: 1rem;
+}
+
+.gerar-titulo h1 {
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+
+.descreva {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+
+/*                                    SOBRE NOS                                  */
+
+.sobrenos{
+    flex: 1;
+    margin-top: 2rem;
+}
+.quemsomos h3 {
+    margin-top: 1rem;
+
+}
+
+
+.botao_sobrenos{
+    font-size: 22px;
+    color: #F0F0F0;
+    padding: 20px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin: 2rem auto;
+    display: block;           
+    width: fit-content; 
+    
+
+}
+.botao_sobrenos{
+    background-color: #070c38;
+    /* Tom mais escuro ao passar o mouse */
+    transform: scale(1.05);
+}
+
+
+/*                                     GALERIA                                  */
+
+.galeria h2{
+    display: inline-block;
+    padding: 20px 35px;
+    
+}
